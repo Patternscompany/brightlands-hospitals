@@ -911,6 +911,40 @@ footer {
     .hero-btns .btn {
         width: 100%;
     }
+
+    /* Testimonials Mobile Slider */
+    .testimonials-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding: 1rem 2rem 2.5rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .testimonials-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .testimonial-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        height: auto;
+    }
+
+    /* Footer Mobile Adjustment */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-col:first-child,
+    .footer-col:last-child {
+        grid-column: span 2;
+    }
 }
 
 /* Appointment Page Styles */
