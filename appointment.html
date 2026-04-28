@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Brightlands Hospitals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BRIGHTLANDS<span>HOSPITALS</span></a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="platforms.html">Platforms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="appointment.html" class="nav-btn">Book Appointment</a>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Appointment Hero -->
+    <section class="appointment-hero">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Skip the queue and schedule your visit with our specialized experts online.</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="container">
+        <div class="appointment-container">
+            <form class="appointment-form" id="appointmentForm">
+                <div class="appointment-form-grid">
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="patientName">Patient Full Name</label>
+                        <input type="text" id="patientName" name="patientName" placeholder="Enter patient name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="patientEmail">Email Address</label>
+                        <input type="email" id="patientEmail" name="patientEmail" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="patientPhone">Phone Number</label>
+                        <input type="tel" id="patientPhone" name="patientPhone" placeholder="+91 00000 00000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="serviceType">Select Service</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="" disabled selected>Choose a platform</option>
+                            <option value="derma">Brightlands Derma</option>
+                            <option value="radiology">UniRad Teleradiology</option>
+                            <option value="diagnostics">Brightlands Diagnostics</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="appointmentDate">Preferred Date</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="appointmentTime">Preferred Time</label>
+                        <select id="appointmentTime" name="appointmentTime" required>
+                            <option value="" disabled selected>Choose a slot</option>
+                            <option value="morning">Morning (9 AM - 12 PM)</option>
+                            <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+                            <option value="evening">Evening (5 PM - 8 PM)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="reason">Reason for Visit (Optional)</label>
+                        <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe your health concern"></textarea>
+                    </div>
+
+                    <div class="full-width">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Confirm Booking Request</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">BRIGHTLANDS<span style="color: var(--secondary-color);">HOSPITALS</span></a>
+                    <p style="margin-top: 1rem; opacity: 0.7;">Your trusted partner in advanced healthcare and diagnostic excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://brightlandsderma.com/">Derma Services</a></li>
+                        <li><a href="https://uniradteleradiology.com/">Teleradiology</a></li>
+                        <li><a href="contact.html">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p style="opacity: 0.7;"><i class="fas fa-location-dot"></i> 123 Healthcare Ave, Medical City</p>
+                    <p style="opacity: 0.7; margin: 0.5rem 0;"><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p style="opacity: 0.7;"><i class="fas fa-envelope"></i> info@brightlands.com</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2026 Brightlands Hospitals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your appointment request has been received! We will contact you shortly to confirm the slot.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

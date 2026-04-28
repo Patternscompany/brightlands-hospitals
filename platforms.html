@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Platforms | Specialized Healthcare Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .platform-hero {
+            background: linear-gradient(rgba(0,86,179,0.8), rgba(0,86,179,0.8));
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding-top: var(--header-height);
+        }
+        .platform-section {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 5rem;
+        }
+        .platform-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .platform-img {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .platform-text {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .platform-section { flex-direction: column !important; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BRIGHTLANDS<span>HOSPITALS</span></a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="platforms.html" class="active">Platforms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="mobile-only"><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <a href="appointment.html" class="nav-btn">Book Appointment</a>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Platform Hero -->
+    <section class="platform-hero">
+        <div class="container text-center">
+            <h1>Our Healthcare Platforms</h1>
+            <p>Comprehensive solutions tailored to your health needs.</p>
+        </div>
+    </section>
+
+    <!-- Platform Details -->
+    <section class="section-padding">
+        <div class="container">
+            
+            <!-- Platform 1 -->
+            <div class="platform-section">
+                <div class="platform-img">
+                    <img src="assets/images/derma.png" alt="Dermatology">
+                </div>
+                <div class="platform-text">
+                    <h2>Brightlands Derma</h2>
+                    <p>Experience the pinnacle of skin health and aesthetic beauty. Our dermatology platform combines medical expertise with the latest laser and skincare technologies. We offer treatments for hair restoration, anti-aging, acne management, and more.</p>
+                    <ul style="margin: 1rem 0; list-style: disc; padding-left: 1.5rem; color: var(--text-light);">
+                        <li>Expert Clinical Consultations</li>
+                        <li>Advanced Laser Treatments</li>
+                        <li>Aesthetic Enhancements</li>
+                    </ul>
+                    <a href="https://brightlandsderma.com/" target="_blank" class="btn btn-primary">Visit Official Website</a>
+                </div>
+            </div>
+
+            <!-- Platform 2 -->
+            <div class="platform-section">
+                <div class="platform-img">
+                    <img src="assets/images/radiology.png" alt="Radiology">
+                </div>
+                <div class="platform-text">
+                    <h2>UniRad Teleradiology</h2>
+                    <p>Breaking geographical barriers in diagnostic imaging. UniRad provides high-quality teleradiology reports for clinics and hospitals worldwide. Our team of board-certified radiologists ensures rapid turnaround times and pinpoint accuracy.</p>
+                    <ul style="margin: 1rem 0; list-style: disc; padding-left: 1.5rem; color: var(--text-light);">
+                        <li>24/7 Global Reporting</li>
+                        <li>Sub-specialty Expertise</li>
+                        <li>Secure Cloud Integration</li>
+                    </ul>
+                    <a href="https://uniradteleradiology.com/" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Platform 3 -->
+            <div class="platform-section">
+                <div class="platform-img">
+                    <img src="assets/images/diagnostics.png" alt="Diagnostics">
+                </div>
+                <div class="platform-text">
+                    <h2>Brightlands Diagnostics</h2>
+                    <p>Accuracy you can trust. Our diagnostic center is equipped with the latest laboratory technology to provide a wide range of pathology and imaging tests. From routine check-ups to specialized diagnostic screenings, we provide comprehensive reports to aid clinical decisions.</p>
+                    <ul style="margin: 1rem 0; list-style: disc; padding-left: 1.5rem; color: var(--text-light);">
+                        <li>Fully Automated Laboratory</li>
+                        <li>Home Sample Collection</li>
+                        <li>Digital Report Access</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">BRIGHTLANDS<span style="color: var(--secondary-color);">HOSPITALS</span></a>
+                    <p style="margin-top: 1rem; opacity: 0.7;">Your trusted partner in advanced healthcare and diagnostic excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://brightlandsderma.com/">Derma Services</a></li>
+                        <li><a href="https://uniradteleradiology.com/">Teleradiology</a></li>
+                        <li><a href="contact.html">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p style="opacity: 0.7;"><i class="fas fa-location-dot"></i> 123 Healthcare Ave, Medical City</p>
+                    <p style="opacity: 0.7; margin: 0.5rem 0;"><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p style="opacity: 0.7;"><i class="fas fa-envelope"></i> info@brightlands.com</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2026 Brightlands Hospitals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

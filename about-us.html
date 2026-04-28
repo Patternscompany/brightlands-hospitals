@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Brightlands Hospitals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,102,255,0.8), rgba(0,102,255,0.8)), url('assets/images/hero.png');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding-top: var(--header-height);
+        }
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .mv-card {
+            padding: 3rem;
+            background: var(--accent-color);
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+        .mv-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .member-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: #ddd;
+            overflow: hidden;
+            border: 5px solid var(--accent-color);
+        }
+        .member-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BRIGHTLANDS<span>HOSPITALS</span></a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html" class="active">About Us</a></li>
+                    <li><a href="platforms.html">Platforms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="mobile-only"><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <a href="appointment.html" class="nav-btn">Book Appointment</a>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container text-center">
+            <h1>About Brightlands Hospitals</h1>
+            <p>Pioneering the future of integrated healthcare with excellence and compassion.</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-summary-grid">
+                <div class="about-image">
+                    <img src="assets/images/about.png" alt="Our Story">
+                </div>
+                <div class="about-text">
+                    <span style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Our Legacy</span>
+                    <h2 style="margin-top: 1rem;">25 Years of Healing Hearts and Minds</h2>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-light); font-size: 1.1rem;">Founded on the principles of integrity and excellence, Brightlands Hospitals has grown from a single clinic to a multi-platform healthcare ecosystem.</p>
+                    <p style="color: var(--text-light);">We believe that every patient deserves access to specialized care without geographical barriers. This vision led to the creation of our diverse platforms, bringing together world-class dermatologists, radiologists, and diagnostic experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section-padding" style="background-color: var(--white);">
+        <div class="container">
+            <div class="mission-vision">
+                <div class="mv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>To provide accessible, high-quality, and specialized healthcare services through innovative technology and expert medical care.</p>
+                </div>
+                <div class="mv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To become a global leader in integrated healthcare management, transforming lives through medical excellence and digital innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Specialized Experts</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-light);">Meet the dedicated professionals leading our healthcare platforms.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <!-- Placeholder for Dr. Rajesh -->
+                        <div style="width: 100%; height: 100%; background: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);"><i class="fas fa-user-md"></i></div>
+                    </div>
+                    <h3>Dr. Arun Verma</h3>
+                    <p style="color: var(--primary-color); font-weight: 600;">Chief Dermatologist</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <div style="width: 100%; height: 100%; background: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);"><i class="fas fa-user-md"></i></div>
+                    </div>
+                    <h3>Dr. Meera Reddy</h3>
+                    <p style="color: var(--primary-color); font-weight: 600;">Lead Radiologist</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <div style="width: 100%; height: 100%; background: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);"><i class="fas fa-user-md"></i></div>
+                    </div>
+                    <h3>Dr. Sanjay Gupta</h3>
+                    <p style="color: var(--primary-color); font-weight: 600;">Pathology Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">BRIGHTLANDS<span style="color: var(--secondary-color);">HOSPITALS</span></a>
+                    <p style="margin-top: 1rem; opacity: 0.7;">Your trusted partner in advanced healthcare and diagnostic excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://brightlandsderma.com/">Derma Services</a></li>
+                        <li><a href="https://uniradteleradiology.com/">Teleradiology</a></li>
+                        <li><a href="contact.html">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p style="opacity: 0.7;"><i class="fas fa-location-dot"></i> 123 Healthcare Ave, Medical City</p>
+                    <p style="opacity: 0.7; margin: 0.5rem 0;"><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p style="opacity: 0.7;"><i class="fas fa-envelope"></i> info@brightlands.com</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2026 Brightlands Hospitals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
