@@ -53,7 +53,7 @@ ul {
     list-style: none;
 }
 
-img {
+img, video {
     max-width: 100%;
     display: block;
 }
@@ -288,6 +288,9 @@ header.scrolled {
 
 .hero-main-img {
     width: 100%;
+    height: auto;
+    min-height: 400px;
+    object-fit: cover;
     border-radius: 30px;
     box-shadow: var(--shadow-lg);
     z-index: 2;
@@ -1092,8 +1095,8 @@ footer {
 
     /* Footer Mobile Adjustment */
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2.5rem 1rem;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem 1.5rem;
     }
 
     .footer-col:first-child,
