@@ -11,9 +11,12 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Remove .html extension
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+
+# Check if the requested URL without extension exists as an .html file
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# Check if the requested URL without extension exists as an .shtml file
+RewriteCond %{DOCUMENT_ROOT}/$1.shtml -f
+RewriteRule ^(.*)$ $1.shtml [L,QSA]
 
