@@ -161,9 +161,16 @@ header.scrolled {
 }
 
 .logo img {
-    height: 70px;
+    height: 55px; /* Better fit for 80px desktop header */
     width: auto;
     display: block;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px; /* Better fit for 70px mobile header */
+    }
 }
 
 .logo span {
