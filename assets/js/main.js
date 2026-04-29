@@ -11,31 +11,47 @@ window.addEventListener('scroll', function() {
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const navLinks = document.getElementById('nav-links');
+const navOverlay = document.getElementById('nav-overlay');
+
+function toggleMenu() {
+    navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    
+    // Change icon
+    const icon = mobileMenuBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+}
 
 if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        
-        // Change icon
-        const icon = mobileMenuBtn.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    });
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+}
+
+if (navOverlay) {
+    navOverlay.addEventListener('click', toggleMenu);
 }
 
 // Close mobile menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (icon) {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
+    link.addEventListener('click', (e) => {
+        // If it's a dropdown toggle, don't close the menu yet
+        if (link.parentElement.classList.contains('dropdown')) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                link.parentElement.classList.toggle('active');
+                return;
+            }
+        }
+        
+        if (navLinks.classList.contains('active')) {
+            toggleMenu();
         }
     });
 });
