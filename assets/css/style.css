@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-color: #0066ff;
@@ -2014,7 +2014,7 @@ footer {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
 }
@@ -2038,7 +2038,7 @@ footer {
 }
 
 .box-img {
-    height: 320px;
+    height: 280px;
     overflow: hidden;
     position: relative;
 }
@@ -2157,3 +2157,4 @@ footer {
     padding-top: var(--header-height);
     text-align: center;
 }
+.team-leader { display: flex; justify-content: center; margin-bottom: 3rem; } .leader-card { max-width: 300px; width: 100%; }
