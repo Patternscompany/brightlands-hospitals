@@ -1,8 +1,4 @@
-# Basic .htaccess for security and redirects
 
-
-# Disable directory browsing
-Options -Indexes
 
 # Enable rewrite engine
 RewriteEngine On
