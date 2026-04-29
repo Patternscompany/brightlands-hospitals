@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-color: #0066ff;
@@ -1267,7 +1267,7 @@ footer {
     display: inline-block;
     padding: 1.2rem 3.5rem;
     font-size: 1.1rem;
-    border-radius: 5px;
+    border-radius: 50px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
@@ -1732,6 +1732,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
+    margin-top: 3.5rem;
 }
 
 @media (max-width: 768px) {
