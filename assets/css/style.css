@@ -156,12 +156,14 @@ header.scrolled {
 }
 
 .logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    letter-spacing: -1.5px;
     display: flex;
     align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
 }
 
 .logo span {
