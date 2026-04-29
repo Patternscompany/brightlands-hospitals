@@ -13,7 +13,7 @@
     --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --max-width: 1280px;
-    --header-height: 90px;
+    --header-height: 80px;
     --mobile-header-height: 70px;
     --border-radius: 20px;
     --container-padding: 2rem;
@@ -222,7 +222,7 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     padding-top: var(--header-height);
     background: radial-gradient(circle at top right, rgba(0, 102, 255, 0.05), transparent),
                 radial-gradient(circle at bottom left, rgba(0, 210, 255, 0.05), transparent);
@@ -289,7 +289,7 @@ header.scrolled {
 .hero-main-img {
     width: 100%;
     height: auto;
-    min-height: 400px;
+    min-height: 350px;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: var(--shadow-lg);
@@ -1725,7 +1725,7 @@ footer {
 
 /* Blogs Section Redesign */
 .blogs-section-v2 {
-    padding: 7rem 0;
+    padding: 5rem 0;
 }
 
 .blog-grid {
