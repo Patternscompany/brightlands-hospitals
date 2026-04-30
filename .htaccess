@@ -1,0 +1,18 @@
+
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# Check if the requested URL without extension exists as an .html file
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# Check if the requested URL without extension exists as an .shtml file
+RewriteCond %{DOCUMENT_ROOT}/$1.shtml -f
+RewriteRule ^(.*)$ $1.shtml [L,QSA]
+
