@@ -354,7 +354,7 @@
                     <h2>Get In Touch</h2>
                     <p>Have questions? Our team is here to help you.</p>
                 </div>
-                <form>
+                <form id="homeContactForm">
                     <div class="form-grid">
                         <div class="form-group">
                             <label>Full Name</label>
@@ -431,6 +431,14 @@
                 autoSlide = setInterval(nextSlide, 8000); // Resume with longer interval
             });
         });
+        // Home Contact Form
+        const homeContactForm = document.getElementById('homeContactForm');
+        if (homeContactForm) {
+            homeContactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                window.location.href = 'thank-you.html';
+            });
+        }
     </script>
 
     <footer>

@@ -176,8 +176,8 @@
     <script>
         document.getElementById('appointmentForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Your appointment request has been received! We will contact you shortly to confirm the slot.');
-            this.reset();
+            // In a real scenario, you would handle form submission via AJAX here
+            window.location.href = 'thank-you.html';
         });
     </script>
 </body>
