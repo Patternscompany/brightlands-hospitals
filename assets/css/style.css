@@ -2047,17 +2047,147 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.read-more {
+.read-more, .read-more-btn {
     font-weight: 700;
     color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
-.read-more:hover {
+.read-more:hover, .read-more-btn:hover {
     gap: 1rem;
+}
+
+/* Blog Modal Styles */
+.blog-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+}
+
+.blog-modal-content {
+    background-color: var(--white);
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.4s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+.blog-modal-header {
+    padding: 4rem 4rem 2rem;
+    text-align: left;
+}
+
+.blog-modal-cat {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.blog-modal-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.blog-modal-date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.blog-modal-img {
+    width: 100%;
+    height: 400px;
+}
+
+.blog-modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-modal-text {
+    padding: 3rem 4rem 4rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.blog-modal-text h4 {
+    font-size: 1.4rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.blog-modal-text p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .blog-modal-header {
+        padding: 3rem 2rem 1.5rem;
+    }
+    
+    .blog-modal-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .blog-modal-text {
+        padding: 2rem 2rem 3rem;
+    }
+    
+    .blog-modal-img {
+        height: 250px;
+    }
 }
 
 /* Global Presence Section */
@@ -2273,15 +2403,13 @@ footer {
 
 .team-card {
     background: var(--white);
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
-    border: 1px solid rgba(0, 0, 0, 0.03);
     transition: var(--transition);
-    text-align: left;
-    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .team-card:hover {
@@ -2291,15 +2419,17 @@ footer {
 }
 
 .box-img {
-    /* height: 280px; */
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     position: relative;
+    background: #f8f9fa;
 }
 
 .box-img img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
+    object-position: top center;
     transition: var(--transition);
 }
 
@@ -2314,7 +2444,7 @@ footer {
 }
 
 .team-content {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;

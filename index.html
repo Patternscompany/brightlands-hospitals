@@ -87,13 +87,13 @@
         <div class="stats-info-left">
             <div class="content-text">
                 <p style="margin-bottom: 1.5rem;">Brightlands is a next-generation healthcare ecosystem integrating
-                    Dermatology, Diagnostics, and Digital Healthcare, designed specifically for international
+                    Dermatology, Teleradiology and Diagnostics, designed specifically for international
                     scalability and cross-border delivery.</p>
                 <p>Our model combines:</p>
                 <ul>
-                    <li>• Advanced clinical care</li>
+                    <li>• Advanced Dermatology care</li>
                     <li>• AI-driven diagnostics</li>
-                    <li>• Telemedicine and digital patient systems</li>
+                    <li>• Teleradiology</li>
                     <li>• Scalable global partnership frameworks</li>
                 </ul>
                 <p style="margin-top: 1.5rem;">Our vision is to build a globally trusted healthcare network originating
@@ -104,20 +104,20 @@
             <h2 class="section-title">LET'S NUMBERS TALK</h2>
             <div class="stats-grid-new">
                 <div class="stat-item-new">
-                    <h4>5+</h4>
-                    <p>Specialized<br>Clinics</p>
+                    <h4>10+</h4>
+                    <p>Specialist<br>Doctors</p>
+                </div>
+                <div class="stat-item-new">
+                    <h4>100+</h4>
+                    <p>Expert Staff and<br>management</p>
+                </div>
+                <div class="stat-item-new">
+                    <h4>1000+</h4>
+                    <p>Successful<br>cases</p>
                 </div>
                 <div class="stat-item-new">
                     <h4>10000+</h4>
                     <p>Happy<br>Patients</p>
-                </div>
-                <div class="stat-item-new">
-                    <h4>100+</h4>
-                    <p>Expert<br>Doctors</p>
-                </div>
-                <div class="stat-item-new">
-                    <h4>1000+</h4>
-                    <p>Modern Bed<br>Units</p>
                 </div>
             </div>
         </div>
@@ -146,11 +146,10 @@
             <!-- Service 2: Radiology -->
             <div class="service-block radiology-theme">
                 <div class="service-content">
-                    <h2>Unirad Teleradiology</h2>
-                    <h3>Diagnostics, Imaging & Global Reporting</h3>
-                    <p>Brightlands' advanced diagnostic imaging division, delivering high-accuracy radiology reporting
-                        and interventional services with internationally certified leadership and technology-first
-                        infrastructure.</p>
+                    <h2>Unirad's Teleradiology</h2>
+                    <h3>Digital Imaging & Expert Reporting</h3>
+                    <p>Unirad Tele Radiology Solutions provides reliable remote radiology reporting for hospitals and diagnostic centers. With expert radiologists and 24/7 support, they deliver accurate reporting for X-Ray, CT, MRI, and other imaging services.
+</p>
                     <a href="https://uniradteleradiology.com/" target="_blank" class="btn-explore">Explore Now</a>
                 </div>
                 <div class="service-image-box">
@@ -162,10 +161,11 @@
             <div class="service-block diagnostics-theme">
                 <div class="service-content">
                     <h2>BrightLands Diagnostics</h2>
-                    <h3>Diagnostics, Imaging & Global Reporting</h3>
-                    <p>BrightsLands Diagnostics is equipped with state-of-the-art technology and staffed by expert
-                        medical professionals. Our commitment lies in delivering precise, prompt, and thorough
-                        diagnostic services to enhance your health and well-being.</p>
+                    <h3>Advanced Diagnostics & Imaging Solutions</h3>
+                    <p>Brightlands Diagnostics delivers accurate and reliable diagnostic solutions with advanced imaging
+                        technology and expert medical support. From routine health screenings to specialized diagnostic
+                        services, they focus on fast reporting, precision, and patient-centered care to support better
+                        healthcare outcomes.</p>
                     <a href="https://brightlandsdiagnostics.com" target="_blank" class="btn-explore">Explore Now</a>
                 </div>
                 <div class="service-image-box">
@@ -237,7 +237,7 @@
         <div class="container">
             <div class="careers-wrapper">
                 <div class="careers-content">
-                    <span class="section-tag">Opportunity</span>
+                    <span class="section-tag"></span>
                     <h2>Join Our Global Team</h2>
                     <p>Brightlands is expanding rapidly across borders. We are looking for passionate healthcare
                         professionals, innovators, and leaders to join our mission of delivering excellence in global
@@ -268,47 +268,46 @@
                 <p>Latest updates from the world of modern medicine and digital healthcare.</p>
             </div>
             <div class="blog-grid">
-                <!-- Blog Card 1 -->
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80"
-                            alt="Blog 1">
-                        <span class="category">Technology</span>
-                    </div>
-                    <div class="blog-info">
-                        <span class="date">May 15, 2026</span>
-                        <h3>The Future of AI in Diagnostics</h3>
-                        <p>How artificial intelligence is revolutionizing the way we detect and treat diseases early.
-                        </p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Blog Card 2 -->
-                <div class="blog-card">
+                <!-- Blog Card 1: Skincare -->
+                <div class="blog-card" data-blog="skincare">
                     <div class="blog-img">
                         <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80"
-                            alt="Blog 2">
+                            alt="Skincare Blog">
                         <span class="category">Wellness</span>
                     </div>
                     <div class="blog-info">
-                        <span class="date">May 10, 2026</span>
+                        <span class="date">Dec 12, 2025</span>
                         <h3>Advanced Skincare Routine</h3>
                         <p>Expert tips from our top dermatologists on maintaining healthy, glowing skin year-round.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <button class="read-more-btn" onclick="openBlogModal('skincare')">Read More <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <!-- Blog Card 3 -->
-                <div class="blog-card">
+                <!-- Blog Card 2: AI in Diagnostics -->
+                <div class="blog-card" data-blog="ai-diagnostics">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80"
+                            alt="AI Blog">
+                        <span class="category">Technology</span>
+                    </div>
+                    <div class="blog-info">
+                        <span class="date">July 10, 2025</span>
+                        <h3>The Future of AI in Diagnostics</h3>
+                        <p>How artificial intelligence is revolutionizing the way we detect and treat diseases early.</p>
+                        <button class="read-more-btn" onclick="openBlogModal('ai-diagnostics')">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <!-- Blog Card 3: Teleradiology -->
+                <div class="blog-card" data-blog="teleradiology">
                     <div class="blog-img">
                         <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=500&q=80"
-                            alt="Blog 3">
+                            alt="Teleradiology Blog">
                         <span class="category">Global Health</span>
                     </div>
                     <div class="blog-info">
-                        <span class="date">May 05, 2026</span>
-                        <h3>Bridging Healthcare Borders</h3>
+                        <span class="date">May 05, 2024</span>
+                        <h3>Teleradiology</h3>
                         <p>The role of teleradiology in providing world-class diagnostics to remote areas globally.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <button class="read-more-btn" onclick="openBlogModal('teleradiology')">Read More <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -325,6 +324,11 @@
                 <div class="presence-card">
                     <i class="fas fa-location-dot"></i>
                     <h4>India</h4>
+                    <span class="badge badge-active">Active</span>
+                </div>
+                <div class="presence-card">
+                    <i class="fas fa-location-dot"></i>
+                    <h4>USA</h4>
                     <span class="badge badge-active">Active</span>
                 </div>
                 <div class="presence-card">
@@ -480,7 +484,7 @@
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <p style="opacity: 0.7;"><i class="fas fa-location-dot"></i> Hyderabad, Telangana, India</p>
-                    <p style="opacity: 0.7; margin: 0.5rem 0;"><i class="fas fa-phone"></i> +91 78787 85823</p>
+                    <p style="opacity: 0.7; margin: 0.5rem 0;"><i class="fas fa-phone"></i> +91 97016 66050</p>
                     <p style="opacity: 0.7;"><i class="fas fa-envelope"></i>
                         drsania@brightlandsglobalhealthcaregroup.com</p>
                 </div>
@@ -497,9 +501,109 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Blog Modal -->
+    <div id="blogModal" class="blog-modal">
+        <div class="blog-modal-content">
+            <span class="close-modal" onclick="closeBlogModal()">&times;</span>
+            <div id="blogModalBody">
+                <!-- Blog content will be injected here -->
+            </div>
+        </div>
+    </div>
+
     <div class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </div>
+
+    <script>
+        const blogData = {
+            'skincare': {
+                title: 'Advanced Skincare Routine: Tips from the Experts',
+                category: 'Wellness',
+                date: 'May 10, 2026',
+                image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+                content: `
+                    <p>Maintaining a healthy, glowing complexion requires more than just a quick wash in the morning. Our top dermatologists at Brightlands Derma have curated this advanced skincare routine to help you achieve your best skin yet.</p>
+                    <h4>1. Double Cleansing</h4>
+                    <p>Start with an oil-based cleanser to remove makeup and sunscreen, followed by a gentle water-based cleanser to deep-clean pores without stripping natural oils.</p>
+                    <h4>2. Targeted Treatment</h4>
+                    <p>Serums are the heavy lifters of any routine. Whether you're targeting hyperpigmentation with Vitamin C or fine lines with Retinol, ensure you apply these to clean, slightly damp skin for maximum absorption.</p>
+                    <h4>3. Hydration is Key</h4>
+                    <p>Lock in moisture with a high-quality moisturizer that suits your skin type. Look for ingredients like hyaluronic acid and ceramides to strengthen the skin barrier.</p>
+                    <h4>4. Never Skip SPF</h4>
+                    <p>The most important step in any routine is sun protection. Apply a broad-spectrum SPF 30 or higher every single morning, even on cloudy days.</p>
+                `
+            },
+            'ai-diagnostics': {
+                title: 'The Future of AI in Diagnostics',
+                category: 'Technology',
+                date: 'May 15, 2026',
+                image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+                content: `
+                    <p>Artificial Intelligence is no longer just a buzzword in healthcare; it's a transformative tool that is saving lives every day. At Brightlands Diagnostics, we are at the forefront of integrating AI into our diagnostic processes.</p>
+                    <h4>Early Detection</h4>
+                    <p>AI algorithms can analyze medical images—from X-rays to MRIs—with incredible precision, often identifying abnormalities that might be invisible to the human eye in the earliest stages of disease.</p>
+                    <h4>Predictive Analytics</h4>
+                    <p>By analyzing vast amounts of patient data, AI can help predict disease patterns and potential health risks, allowing for proactive intervention rather than reactive treatment.</p>
+                    <h4>Assisting Doctors</h4>
+                    <p>AI doesn't replace doctors; it empowers them. By handling the heavy lifting of data analysis, AI allows medical professionals to focus more on patient care and complex decision-making.</p>
+                `
+            },
+            'teleradiology': {
+                title: 'Bridging Healthcare Borders with Teleradiology',
+                category: 'Global Health',
+                date: 'May 05, 2026',
+                image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
+                content: `
+                    <p>Quality healthcare should not be defined by geography. Teleradiology is breaking down borders, ensuring that patients in remote or underserved areas have access to world-class diagnostic expertise.</p>
+                    <h4>24/7 Global Reporting</h4>
+                    <p>Through Unirad Teleradiology, we provide round-the-clock radiology reporting. This means an X-ray taken in a rural clinic at midnight can be interpreted by a specialist thousands of miles away within minutes.</p>
+                    <h4>Rapid Turnaround Times</h4>
+                    <p>In emergency situations, every second counts. Teleradiology ensures that high-accuracy reports are delivered swiftly, facilitating faster diagnosis and treatment.</p>
+                    <h4>Expertise on Demand</h4>
+                    <p>Sub-specialized radiology expertise—such as pediatric radiology or neuroradiology—can be made available to any facility, regardless of its location, through our secure digital network.</p>
+                `
+            }
+        };
+
+        function openBlogModal(blogId) {
+            const blog = blogData[blogId];
+            if (!blog) return;
+
+            const modalBody = document.getElementById('blogModalBody');
+            modalBody.innerHTML = `
+                <div class="blog-modal-header">
+                    <span class="blog-modal-cat">${blog.category}</span>
+                    <h2>${blog.title}</h2>
+                    <span class="blog-modal-date">${blog.date}</span>
+                </div>
+                <div class="blog-modal-img">
+                    <img src="${blog.image}" alt="${blog.title}">
+                </div>
+                <div class="blog-modal-text">
+                    ${blog.content}
+                </div>
+            `;
+
+            const modal = document.getElementById('blogModal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeBlogModal() {
+            const modal = document.getElementById('blogModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('blogModal');
+            if (event.target == modal) {
+                closeBlogModal();
+            }
+        }
+    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
