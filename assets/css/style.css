@@ -712,6 +712,10 @@ footer {
     padding-left: 5px;
 }
 
+.footer-col p {
+    word-break: break-all;
+}
+
 .copyright {
     border-top: 1px solid #333;
     padding-top: 2rem;
@@ -730,6 +734,10 @@ footer {
     padding: 2rem;
     background-color: var(--accent-color);
     border-radius: 15px;
+}
+
+.contact-info p {
+    word-break: break-all;
 }
 
 .contact-info-item {
